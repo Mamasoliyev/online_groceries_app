@@ -15,7 +15,12 @@ class OnboardingScreen extends StatelessWidget {
       body: Stack(
         alignment: Alignment.center,
         children: [
-          Image.asset("assets/images/azizbek.jpg"),
+          Image.asset(
+            "assets/images/azizbek.jpg",
+            fit: BoxFit.fill,
+            width: double.infinity,
+            height: double.infinity,
+          ),
           Positioned(
             bottom: 0,
             left: 0,
@@ -44,11 +49,11 @@ class OnboardingScreen extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: height * 0.23,
-            width: width * 0.62,
+            bottom: height * 0.22,
+            width: width * 0.7,
             child: Text(
               textAlign: TextAlign.center,
-              "Welcome to our store",
+              "Welcome     to our store",
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w500,
