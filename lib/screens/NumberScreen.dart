@@ -11,7 +11,7 @@ class Numberscreen extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: AppBar(leading: Icon(Icons.arrow_back_ios)),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
         spacing: 25,
         children: [
           Padding(
@@ -25,6 +25,19 @@ class Numberscreen extends StatelessWidget {
               ),
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.only(left: 25, top: 80),
+            child: Text(
+              "Mobile Number",
+              style: TextStyle(
+                fontFamily: "Gilroy",
+                fontSize: 16,
+                color: Color(0xFF7C7C7C),
+                fontWeight: FontWeight.w300,
+              ),
+            ),
+          ),
+
           Container(
             padding: EdgeInsets.only(left: 25),
             height: 40,
@@ -46,6 +59,20 @@ class Numberscreen extends StatelessWidget {
                   ),
                 ),
               ],
+            ),
+          ),
+          SizedBox(height: 100),
+          Padding(
+            padding: const EdgeInsets.only(left: 350),
+            child: IconButton.filled(
+              style: IconButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(40),
+                ),
+                backgroundColor: Color(0xFF53B175),
+              ),
+              onPressed: () {},
+              icon: Icon(Icons.arrow_forward_ios),
             ),
           ),
         ],

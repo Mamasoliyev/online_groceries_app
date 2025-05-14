@@ -17,7 +17,7 @@ class OnboardingScreen extends StatelessWidget {
         children: [
           Image.asset(
             "assets/images/azizbek.jpg",
-            fit: BoxFit.fill,
+            fit: BoxFit.cover,
             width: double.infinity,
             height: double.infinity,
           ),
