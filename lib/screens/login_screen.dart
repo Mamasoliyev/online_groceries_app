@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:online_groceries_market/screens/NumberScreen.dart';
+import 'package:online_groceries_market/screens/number_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});

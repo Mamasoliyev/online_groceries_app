@@ -32,8 +32,9 @@ flutter:
   fonts:
     - family: Gilroy
       fonts:
-        - asset: assets/fonts/gilroy/Gilroy-Bold.ttf
         - asset: assets/fonts/gilroy/Gilroy-Heavy.ttf
         - asset: assets/fonts/gilroy/Gilroy-Light.ttf
         - asset: assets/fonts/gilroy/Gilroy-Regular.ttf
         - asset: assets/fonts/gilroy/Gilroy-Medium.ttf
+        - asset: assets/fonts/gilroy/Gilroy-Bold.ttf
+
