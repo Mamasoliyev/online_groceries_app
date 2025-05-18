@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
 class FavouriteScreen extends StatelessWidget {
   const FavouriteScreen({super.key});
@@ -8,57 +7,68 @@ class FavouriteScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xFFFFFFFF),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: [
-          SizedBox(height: 30),
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            SizedBox(height: 30),
 
-          Text(
-            "Favourites",
-            style: TextStyle(
-              fontFamily: "Girloy",
-              fontSize: 18,
+            Text(
+              "Favourites",
+              style: TextStyle(
+                fontFamily: "Girloy",
+                fontSize: 18,
 
-              fontWeight: FontWeight.w800,
-              color: Color(0xFF181725),
+                fontWeight: FontWeight.w800,
+                color: Color(0xFF181725),
+              ),
             ),
-          ),
 
-          SizedBox(height: 30),
-          Divider(),
+            SizedBox(height: 30),
+            Divider(),
 
-          buildContainer(path: "assets/images/sprite.png", text: "Sprite Can"),
-          buildContainer(path: "assets/images/coke.png", text: "Diet Coke"),
-          buildContainer(path: "assets/images/pepsi.png", text: "Apple Juice"),
-          buildContainer(path: "assets/images/cola.png", text: "Coca Coal Can"),
-          buildContainer(path: "assets/images/pepsi.png", text: "Pepsi Can"),
-
-          SizedBox(height: 15),
-          Container(
-            height: 67,
-            width: 364,
-            padding: EdgeInsets.only(left: 25),
-            alignment: Alignment.center,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              color: Color(0xFF53B175),
+            buildContainer(
+              path: "assets/images/sprite.png",
+              text: "Sprite Can",
             ),
-            child: Padding(
-              padding: const EdgeInsets.only(right: 30),
-              child: Center(
-                child: Text(
-                  "Add All To Cart",
-                  style: TextStyle(
-                    color: Color(0xFFFCFCFC),
-                    fontSize: 18,
-                    fontFamily: "Gilroy",
-                    fontWeight: FontWeight.w500, // Reduced to fit comfortably
+            buildContainer(path: "assets/images/coke.png", text: "Diet Coke"),
+            buildContainer(
+              path: "assets/images/pepsi.png",
+              text: "Apple Juice",
+            ),
+            buildContainer(
+              path: "assets/images/cola.png",
+              text: "Coca Coal Can",
+            ),
+            buildContainer(path: "assets/images/pepsi.png", text: "Pepsi Can"),
+
+            SizedBox(height: 15),
+            Container(
+              height: 67,
+              width: 364,
+              padding: EdgeInsets.only(left: 25),
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                color: Color(0xFF53B175),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.only(right: 30),
+                child: Center(
+                  child: Text(
+                    "Add All To Cart",
+                    style: TextStyle(
+                      color: Color(0xFFFCFCFC),
+                      fontSize: 18,
+                      fontFamily: "Gilroy",
+                      fontWeight: FontWeight.w500, // Reduced to fit comfortably
+                    ),
                   ),
                 ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

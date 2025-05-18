@@ -5,9 +5,7 @@ class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    final width = MediaQuery.of(context).size.width;
-    final height = MediaQuery.of(context).size.height;
+  Widget build(BuildContext context){
 
     return Scaffold(
       backgroundColor: Colors.white,

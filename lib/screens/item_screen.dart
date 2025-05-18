@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ExploreScreen extends StatelessWidget {
-  const ExploreScreen({super.key});
+class ItemScreen extends StatelessWidget {
+  const ItemScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,70 +14,6 @@ class ExploreScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Row(
-                children: [
-                  // Qidiruv maydoni
-                  Expanded(
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 12),
-                      height: 48,
-                      decoration: BoxDecoration(
-                        color: Colors.grey.shade100,
-                        borderRadius: BorderRadius.circular(24),
-                      ),
-                      child: Row(
-                        children: [
-                          const Icon(Icons.search, color: Colors.black54),
-                          const SizedBox(width: 8),
-                          const Expanded(
-                            child: TextField(
-                              decoration: InputDecoration(
-                                hintText: 'Egg',
-                                border: InputBorder.none,
-                              ),
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              // Matnni tozalash funksiyasi (keyinchalik qo‘shilishi mumkin)
-                            },
-                            child: const Icon(
-                              Icons.close,
-                              size: 20,
-                              color: Colors.grey,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-
-                  const SizedBox(width: 12),
-
-                  // Filter tugmasi
-                  Container(
-                    height: 48,
-                    width: 48,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(12),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black.withOpacity(0.05),
-                          blurRadius: 6,
-                          offset: const Offset(0, 2),
-                        ),
-                      ],
-                    ),
-                    child: IconButton(
-                      icon: const Icon(Icons.tune), // yoki Icons.filter_list
-                      onPressed: () {
-                        // Filter menyusini ochish funksiyasi
-                      },
-                    ),
-                  ),
-                ],
-              ),
               Row(children: [cards[0], cards[1]]),
               Row(children: [cards[2], cards[3]]),
               Row(children: [cards[4], cards[5]]),
